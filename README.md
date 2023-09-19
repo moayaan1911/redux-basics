@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+<!-- @format -->
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Redux Tutorial
 
-## Available Scripts
+This is a simple todo app built with React and Redux. It uses Redux Toolkit for managing state.
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+This app allows users to:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Add new todos
+- Mark todos as completed
+- Delete todos
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The todos are stored in Redux state and persisted across app loads.
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Add new todos with a title
+- Mark todos as completed/incomplete
+- Delete existing todos
+- Todos persist in state on page reloads
 
-### `npm run build`
+## File structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- `store.js` - Creates and configures the Redux store
+- `todoSlice.js` - Contains the reducer logic and actions for the todos
+- `AddTodo.js` - Component to add new todos
+- `ReadTodos.js` - Component to display list of todos
+- `App.js` - Root component that renders AddTodo and ReadTodos
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The store is created and passed to React Redux's `<Provider>` component in `index.js`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`todoSlice.js` contains the reducer with logic to handle adding, editing, and deleting todos. It exports the actions and reducer.
 
-### `npm run eject`
+`AddTodo` dispatches the `addTodo` action when a new todo is added. `ReadTodos` uses React Redux's `useSelector` hook to get the todos state and display it.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Let me know if you would like me to explain or expand on any part of the file/folder structure!
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Resources
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- [Redux Toolkit Docs](https://redux-toolkit.js.org/introduction/getting-started)
+- [React Redux Docs](https://react-redux.js.org/introduction/getting-started)
+- [React Redux Tutorial - YouTube](https://www.youtube.com/watch?v=9jULHSe41ls)
+- [Building Todo App with React and Redux - YouTube](https://www.youtube.com/watch?v=1w-oQ-i1XB8)
+- [React Redux Crash Course 2021 - YouTube](https://www.youtube.com/watch?v=9jULHSe41ls)
+- [React Redux Course for Beginners - FreeCodeCamp](https://www.freecodecamp.org/news/redux-course/)
+- [React Redux GitHub Repo Examples](https://github.com/reduxjs/redux/blob/master/examples)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# About the Developer
 
-## Learn More
+Hello everyone, myself **Mohammad Ayaan Siddiqui** from India. I am a Full Stack WEB3 developer and a **DECENTRALIZATION MAXI**. Currently working as TECHNICAL CO-FOUNDER in a web3 startup based in Netherlands.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<p align="center">
+<img src="./public/profile.jpg" alt="profile" style="height: 400px; width:500px;"/>
+</p>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+If you are interested in either of the topics or building in similar skills, connect with me below:-
 
-### Code Splitting
+1.  ![Alt text](./public/taplink.png 'Taplink') [My Taplink Dashboard](https://moayaan.taplink.ws/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2.  ![Alt text](./public/linktree.png 'linktree') [My Linktree with ALL SOCIALS](https://linktr.ee/ayaaneth)
+3.  ![Alt text](./public/github.png 'github') [Connect on Github](https://github.com/moayaan1911)
+4.  ![Alt text](./public/linkedin.png 'linkedin') [Connect on Linkedin](www.linkedin.com/in/ayaaneth)
+5.  ![Alt text](./public/hashnode.png 'dev') [Connect on Hashnode](https://moayaan.hashnode.dev/)
+6.  ![Alt text](./public/twitter.png 'twitter') [Connect on Twitter](https://www.twitter.com/usdisshitcoin)
+7.  ![Alt text](./public/telegram.png 'telegram') [Connect on Telegram](https://t.me/usdisshitcoin)
+8.  ![Alt text](./public/dev.png 'dev') [Connect on dev.to](https://dev.to/moayaan1911)
